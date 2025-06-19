@@ -22,7 +22,7 @@ app.add_middleware(
 )
 
 # Configuración de la base de datos
-SQLALCHEMY_DATABASE_URL = "mysql://root:PbwSswMPvXRZZQRsXdFHZkqRMgNGEWlq@shuttle.proxy.rlwy.net:59650/railway"
+SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:PbwSswMPvXRZZQRsXdFHZkqRMgNGEWlq@shuttle.proxy.rlwy.net:59650/railway"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
